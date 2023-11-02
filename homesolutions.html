@@ -10,6 +10,245 @@
 </head>
 
 <body>
+  <style>
+    html {
+      height: 100%;
+      width: 100%;
+    }
+    
+    body {
+      background-color: #f2f7f5;
+    }
+    
+    p {
+      color: #475d5b;
+      font-family: Poppins, sans-serif;
+    }
+    
+    span {
+      color: #475d5b;
+      font-family: Poppins, sans-serif;
+    }
+    
+    h1 {
+      color: #00473e;
+      font-family: Poppins, sans-serif;
+    }
+    
+    * {
+      margin: 0;
+      padding: 0;
+      outline: none;
+      border: none;
+      text-decoration: none;
+      box-sizing: border-box;
+    }
+    
+    nav {
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      height: 100%;
+      left: 0;
+      background: #64dd88;
+      width: 90px;
+      overflow: hidden;
+      transition: width 0.2s linear;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 1);
+      z-index: 3;
+    }
+    
+    .logo {
+      text-align: center;
+      display: flex;
+      transition: all 0.5s ease;
+      margin: 10px 0 0 10px;
+    }
+    
+    .logo img {
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      margin-left: 0px;
+      margin-top: 10px;
+    }
+    
+    .logo span {
+      font-weight: bold;
+      padding-left: 15px;
+      font-size: 18px;
+      margin-top: 10px;
+      /*text-transform: uppercase;*/
+    }
+    
+    .highlight {
+      position: relative;
+      color: rgb(85, 83, 83);
+      font-size: 14px;
+      display: table;
+      width: 300px;
+      padding: 10px;
+      padding-bottom: 30px;
+    }
+    
+    .highlight:hover {
+      background-color: #eee;
+    }
+    
+    .icons {
+      position: relative;
+      width: 30px;
+      height: 30px;
+      top: 20px;
+      font-size: 24px !important;
+      text-align: center;
+      fill: #555353;
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+    
+    .nav-item {
+      position: relative;
+      top: 10px;
+      margin-left: 10px;
+      font-size: 18px;
+      font-family: Trebuchet MS, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Tahoma, sans-serif;
+    }
+    
+    nav:hover {
+      width: 280px;
+      transition: all 0.5s ease;
+    }
+    
+    .content {
+      margin-left: 110px;
+      margin-top: 20px;
+      font-family: Trebuchet MS, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Tahoma, sans-serif;
+      margin-right: 20px;
+      line-height: 1.4;
+    }
+    
+    h1 {
+      text-align: center;
+      font-weight: 900;
+    }
+    
+    h2 {
+      text-align: center;
+      font-weight: 800;
+    
+    }
+    
+    p {
+      text-align: center;
+    }
+    
+    /*i {
+      text-align: center !important;
+    }
+    */
+    .programs {
+      background-color: #ebebeb;
+      border: none;
+      color: black;
+      padding: 10px 300px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+      border-radius: 8px;
+      z-index: -15;
+    }
+    
+    button:hover {
+      background-color: #00473e;
+      color: white;
+    }
+    
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 30vh;
+      border-radius: 20px;
+      background-color: #f2f7f5;
+      box-shadow: 0 0 2px rgba(0, 0, 0, 1);
+      margin-bottom: 60px;
+    }
+    
+    .links {
+      display: inline-block;
+      padding: 15px;
+      margin-top: 10px;
+      font-size: 15px;
+      cursor: pointer;
+      text-align: center !important;
+      text-decoration: none;
+      outline: none;
+      color: #fff;
+      background-color: #378a00;
+      border: none;
+      border-radius: 15px;
+      box-shadow: 0 9px #999;
+      font-family: Poppins, sans-serif;
+    }
+    
+    .links:hover {
+      background-color: #005703
+    }
+    
+    .links:active {
+      background-color: #3e8e41;
+      box-shadow: 0 5px #666;
+      transform: translateY(4px);
+    }
+    
+    .container1 {
+      display: flex;
+      align-items: center;
+      justify-content: center
+    }
+    
+    .container2 {
+      text-align: center;
+      width: 80%;
+      max-width: 1200px;
+      background-color: #fff;
+      margin: 20px auto;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+    
+    .content {
+      margin-top: 20px;
+      line-height: 1.6;
+    }
+    
+    @media (max-width: 768px) {
+      .container {
+        width: 90%;
+      }
+    }
+    
+    .image {
+      margin-left: 20px;
+      margin-right: 20px;
+      display: block;
+    }
+    
+    .text {
+      text-align: left !important;
+    }
+    
+    .left {
+      text-align: left;
+    }
+  </style>
+  
   <nav>
     <ul>
       <li>
